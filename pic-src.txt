@@ -1,0 +1,4 @@
+This file contains image sources that were used in my presentation:
+Of course I do not claim authorship over them.
+
+https://s3.amazonaws.com/codementor_content/2016-May/reddit_wordcloud.png
