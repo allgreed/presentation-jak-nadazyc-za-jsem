@@ -16,8 +16,6 @@ Podziękować Kitty, że jest tutaj ze mną
 <!-- .slide: data-background-color="black" -->
 <img src="img/hs_logo.png" style="background: none; border: none" alt="Hackerspace Trójmiasto" />
 
-Note:
-Hackerspace to 4 rzeczy:
 - Oszczędność czasu i hajsu
 - Kultura wymiany wiedzy
 - Community
@@ -45,15 +43,16 @@ Ekosystem vs język.
 
 
 
-# ???
+<h1 style="font-size:2.11em">???????</h1>
 
 - TypeScript
 - CoffeeScript
-- Jscript
-- LiveScript
 - Mocha
+- LiveScript
+- Jscript
 - <span style="font-weight: bold; color: #b58900">JavaScript</span>
 - ECMAScript
+- ECMA-262
 - ES6
 - ES2015
 
@@ -82,25 +81,122 @@ Note:
 Pojawił się w 2012, licencja Apache 2.0, good job Microsoft
 
 
-- Jscript
-- LiveScript
 - Mocha
+- LiveScript
+- Jscript
 - <span style="font-weight: bold; color: #b58900">JavaScript</span>
 - ECMAScript
+- ECMA-262
 - ES6
 - ES2015
 
 
 ## Krótka historia JSa
+
+
+### Mocha - Maj 95' (Netscape)
+
+Note:
+Oryginalna nazwa "Mocha" przez foundera Netscape'u
+
+
+### LiveScript - Wrzesień 95' (Netscape)
+
+Note:
+Nie mogłem znaleźć powodu zmiany nazwy
+
+
+### JavaScript - Grudzień 95' (Netscape)
+
+Note:
+Sun Microsystems dał licencję na trademark "Java". Java była wtedy popularna w chuj, więc chcieli zyskać na hypie marketingowym.
+
+
+### Jscript - 96' (Microsoft)
+
+Note:
+Microsoft nie chciał się pchać w przepychanki trademarkowe. Prawo w Stanach jest pojebane w tym zakresie. W tym momencie jest to "wtyczka" do .NETa, nie przejmujcie się tym
+
+
+- ECMAScript
+- ECMA-262
+- ES6
+- ES2015
+- <span style="font-weight: bold; color: #b58900">JavaScript</span>
+
+
+## ECMA International - ECMAScript (od 97')
+
+European Computer Manufacturers Association
+
+Note:
+To nie są jakieś korpo-buce, tylko oddolna organizacja standaryzująca, współpracują też z rządowymi organizacjami standaryzującymi. Netscape przekazał prace nad językiem. Nazwę zmienili, bo nie chcą się bujać z Sunem odnośnie trademarków. Mieli też historie submitownaia i unsubmitowania propozycji standaryzacji Javy.
+
+
+## ECMA-262 = ECMAScript
+
+Note:
+Nazwa kodowa ECMAScript
+ECMA standaryzuje też C++ (372), C#(334) i JSONa(404) [Mem, bo na wikipedii nie ma tej strony xD].
+
+
+## Krótka historia ECMAScript
+
+
+### Pierwsze wydanie - Czerwiec 97'
+
+Note: 1 wydanie, rok później. Kompatybliność z ISO.
+
+
+### 3 - Czerwiec 98'
+
+- RegExpy
+- Try/Catch
+
+
+### Niiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiic...
+
+
+### 5 i 5.1 - Czerwiec 2009 / 2011
+
+Note:
+Troszku poprawione, kompatybilne z ISO
+
+
+### Teraz
+### ES6 = ES2015
+
+Note:
+No ogólnie zadziało się dużo, lista zmian w materiałach (m.in. inne deklarowanie zmiennych, template literals, Promises, module syntax [import/export]). Czy wszyscy to kojarzą +-? ECMA obiecała wypuszczać standard co roku i stąd numeracja (nie wersja standardu, a rok wypuszczenia).
+
+
+- <span style="font-weight: bold; color: #b58900">JavaScript</span>
+
+
+## <span style="color: #b58900">JavaScript</span> ???
+
+- TL:DR -> JS = ES
+- Długa odpowiedź
+
+Note:
+JS = (Implementacja ^ dialekt) ES + (BrowserAPI ^ C++ API)  
+Język jest zbiorem reguł / standardem, więc implementacja to kompilator / interpreter (np. V8)  
+Imo bardziej dialekt    
+Oba terminy są używane.     
+
+
+
+## Jak śledzić JSa?
 <!-- Tu skończyłem, pozmieniać tytuły -->
 
 
 
-### Ecma International (też JSON, C#, C++)
-### ECMA-262
-### Czyli czym tak naprawdę jest JS (implementacją ECMAScript + Browser APIs, ale nie zmużdżajcie się na tym specjalnie)
 
-## Jak śledzić JSa?
+
+
+
+
+
 
 ### RSS, Twitter, Blogi (wszystko chuj, bo jest zopiniowane)
 ### TC39
@@ -140,35 +236,3 @@ Pojawił się w 2012, licencja Apache 2.0, good job Microsoft
 
 
 # To podziękował
-
-
-
-# Materiały
-
-
-## Przydatne/ciekawe:
-
-- [Słownik żargonu JSowego](http://jargon.js.org/)
-
-
-## Grant patentowy facebooka:
-- [Oświadczenie facebooka](https://code.facebook.com/posts/1639473982937255/updating-our-open-source-patent-grant/)
-- [React na Medium](https://medium.com/@dwalsh.sdlr/react-facebook-and-the-revokable-patent-license-why-its-a-paper-25c40c50b562)
-- [GraphQL na Medium](https://medium.com/@dwalsh.sdlr/using-graphql-why-facebook-now-owns-you-3182751028c9)
-- [Petycja na Githubie o zmianę licencji](https://github.com/facebook/react/issues/10191#)
-- [Moar](https://www.theregister.co.uk/2017/08/21/facebook_apache_openbsd_plus_license_dispute/)
-
-
-## CoffeeScript:
-
-- [Strona projektu](http://coffeescript.org/)
-- [Wiki](https://en.wikipedia.org/wiki/CoffeeScript)
-- [Transpiler online](http://js2.coffee/)
-
-
-## TypeScript:
-
-- [Strona projektu](https://www.typescriptlang.org/)
-- [Genialny filmik wprowadzający](https://channel9.msdn.com/Events/Build/2017/B8088/)
-- [Wiki](https://en.wikipedia.org/wiki/TypeScript)
-- [Transpiler online](https://www.typescriptlang.org/play/)
