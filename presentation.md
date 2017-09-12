@@ -39,7 +39,7 @@ Paczki spoko od Fejsa: Yarn
 ![](img/js_ecosystem.png)
 
 Note:
-Ekosystem vs język.
+Ekosystem vs język. Nie będzie o paczkach i nie będzie o API przeglądarkowym / C++owym.
 
 
 
@@ -186,21 +186,28 @@ Oba terminy są używane.
 
 
 
-## Jak śledzić JSa?
+# Jak nadążyć za ECMAScript?
+
+Note:
+Tak powinien brzmieć tytuł. Tylko wtedy nikt by nie przyszedł, bo nie wiedzałby o co chodzi ;)
+
+
+## RSS, Twitter, Blogi 
+![](img/social_overload.jpg)
+
+Note:
+- Zopiniowane
+- Nie zawsze na bieżąco
+- Nie zawsze uwzględniają wszystkie aspekty nowego ficzera
+
+
+## Ecma Technical Committee 39 (TC39)
+
+Note:
+Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są firmy, m.in. Facebook, GoDaddy, Bloomberg, które wysyłają swoich ludzi. Spotykają się kilka razy w roku i ogarniają ficzery.
 <!-- Tu skończyłem, pozmieniać tytuły -->
 
-
-
-
-
-
-
-
-
-
-### RSS, Twitter, Blogi (wszystko chuj, bo jest zopiniowane)
-### TC39
-#### ??? (co to?)
+<!-- Strona na githubie, jako wyjaśnienie jak ogarniać co robią te typy -->
 
 #### Przykładowa specyfikacja
 ##### Z czego się składa?

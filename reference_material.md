@@ -40,3 +40,8 @@
 - [Wiedza plemienna ze Stacka](https://stackoverflow.com/questions/912479/what-is-the-difference-between-javascript-and-ecmascript/30113184#30113184)
 - [ES na wiki](https://en.wikipedia.org/wiki/ECMAScript)
 - [Wszystkie ficzery ES6](http://es6-features.org/)
+
+## TC39:
+- [Github repo](https://github.com/tc39)
+- [Memebers](https://github.com/orgs/tc39/people)
+- [Wzminaka na ECMA International](http://www.ecma-international.org/memento/TC39.htm)
