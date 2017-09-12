@@ -1,4 +1,8 @@
 This file contains image sources that were used in my presentation:
 Of course I do not claim authorship over them.
 
-https://s3.amazonaws.com/codementor_content/2016-May/reddit_wordcloud.png
+http://hs3.pl/images/profile.png
+https://cdn-images-1.medium.com/max/1400/1*raWO3dhM4jMjf9VY-kZzNg.png
+https://1.bp.blogspot.com/-JwKKF1ESdVo/VcdneMYiFjI/AAAAAAAABU0/OCsCBQ2OeFgfc4SvTyitPe183zHG_mVDwCKgB/s1600/js-logo-badge-512.png
+http://downloadicons.net/sites/default/files/gear-icon-88540.png
+https://cdn0.iconfinder.com/data/icons/web-development-2/512/webpage_coding_web_programming_html_script_php_code_website_application_java_css_development_editor_flat_design_icon-512.png
