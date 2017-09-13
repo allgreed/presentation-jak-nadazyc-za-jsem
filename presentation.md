@@ -1,16 +1,23 @@
 # Jak nadążyć za jsem?
 ## by Olgierd &#34;Allgreed&#34; Kasprowicz
 
+Note:
+- Techniczna: Dodatkowy monitor na notatki dopiąć [#nabogato] :DD
+- Techniczna: Odpalić fullscreen przy pomocy F11, a nie "f"
+
+- Polecam zaciągnąć prezkę z Githuba [link na Meetupie] -> dużo linków w materiałach + kody demo do śledzeine na bieżąco
+- To nie jest szkoła, jak nie rozumiecie to krzyczcie [test: "Importując tensor-flow wygenerujemy exploita Emacsem przez Sendmail"]
+- Jaki poziom nadążania za JSem na sali? (AA / 3lvl: let+const | async+await | dekoratory)
+
 
 
 # <span style="color: #b58900">Disclaimer</span>
 <!-- .slide: data-background-color="black" -->
 
 Note:
-Kod na githubie, prezka zawiera duuuuużo linków, polecam obczaić ;)
-Moje opinie są moje, a nie mojego pracodawcy lub podmiotów, w których jestem udziałowcem.
-Jak nie rozumiecie to krzyczcie
-Podziękować Kitty, że jest tutaj ze mną
+- Podziękować Kitty, że jest tutaj ze mną
+- Moje opinie są moje, a nie mojego pracodawcy lub podmiotów, w których jestem udziałowcem / akcjonariuszem.
+- Prezka jest w pełni open-source, na licencji MIT, zrobiona przy pomocy reveal.js [open-source] i GIMPa [też open-source]. Żaden Photoshop nie został spiracony podczas jej tworzenia.
 
 
 <!-- .slide: data-background-color="black" -->
@@ -125,12 +132,12 @@ Microsoft nie chciał się pchać w przepychanki trademarkowe. Prawo w Stanach j
 - <span style="font-weight: bold; color: #b58900">JavaScript</span>
 
 
-## ECMA International - ECMAScript (od 97')
+##  ECMAScript - 97' (ECMA International)
 
 European Computer Manufacturers Association
 
 Note:
-To nie są jakieś korpo-buce, tylko oddolna organizacja standaryzująca, współpracują też z rządowymi organizacjami standaryzującymi. Netscape przekazał prace nad językiem. Nazwę zmienili, bo nie chcą się bujać z Sunem odnośnie trademarków. Mieli też historie submitownaia i unsubmitowania propozycji standaryzacji Javy.
+Netscape przekazał prace nad językiem. To nie są jakieś korpo-buce, tylko oddolna organizacja standaryzująca, współpracują też z rządowymi organizacjami standaryzującymi.Nazwę zmienili, bo nie chcą się bujać z Sunem odnośnie trademarków. Mieli też historie submitownaia i unsubmitowania propozycji standaryzacji Javy.
 
 
 ## ECMA-262 = ECMAScript
@@ -192,29 +199,94 @@ Note:
 Tak powinien brzmieć tytuł. Tylko wtedy nikt by nie przyszedł, bo nie wiedzałby o co chodzi ;)
 
 
-## RSS, Twitter, Blogi 
+## RSS, Twitter, Blogi, Meety, Nagrania z konfernecji...
 ![](img/social_overload.jpg)
 
 Note:
-- Zopiniowane
-- Nie zawsze na bieżąco
-- Nie zawsze uwzględniają wszystkie aspekty nowego ficzera
+- Odstęp czasowy między zmianą w proposalu, a publikacją artykułu (czas na zauważenie, przetworzenie [w tym jakieś zabawy z ficzerem], pisanie i publikację -> rozrysować na tablicy jak będzie opcja)
+- Nie pokrywają wszystkiego (nie o wszystkich rzeczach ktoś chce pisać)
+- Zopiniowane i okrojone (jakby nie były okrojone to można byłoby zreposotwać proposal)
 
 
-## Ecma Technical Committee 39 (TC39)
+## TC39
+
+![](img/tc39.png)
 
 Note:
-Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są firmy, m.in. Facebook, GoDaddy, Bloomberg, które wysyłają swoich ludzi. Spotykają się kilka razy w roku i ogarniają ficzery.
-<!-- Tu skończyłem, pozmieniać tytuły -->
+Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są też firmy, m.in. Facebook, GoDaddy, Bloomberg, które wysyłają swoich ludzi. Spotykają się kilka razy w roku i ogarniają ficzery.
 
-<!-- Strona na githubie, jako wyjaśnienie jak ogarniać co robią te typy -->
 
-#### Przykładowa specyfikacja
-##### Z czego się składa?
-##### Jak czytać
+![](img/proposal_manifest.png)
+
+
+## Przykładowy proposal
+
+<a href="https://github.com/tc39/Array.prototype.includes" target="_blank">Array.prototype.include </a>
+
+Note:
+[Tab + Enter]
+Lajtowy ficzer (niewiele dodatkowej syntaksy), używamy w Aidlabie na produkcji. Jak ktoś widział jedno README na Githubie to widział je wszystkie.
+
+
+## Z czego się składa i jak czytać?
+
+- Problem
+- Rozwiązanie
+- Status
+- (opcjonalnie: dodatkowe info)
+
+Note:
+- Czemu w ogóle ten prospoal powstał?
+- Jak rozwiązuje opisany problem (włącznie z formalną specką i testami)?
+- Jak idzie implementacja?
+
+Nie zawsze w ten sposób, nie zawsze w widocznym miejscu, ale te informacje tam są.
+
+
+### Problem
+
+![](img/arr_ptt_inc_problem.png)
+
+Note:
+Kto kiedykolwiek napisał taki kod w JSie jak jest na slajdzie? Kto rozumie problem? Kto uważa, że to jest istotny problem (wtedy warto czytać dalej)? 
+
+
+### Rozwiązanie
+
+![](img/arr_ptt_inc_solution.png)
+
+Note:
+Kto uważa, że to jest spoko rozwiązanie? Kto będzie używał od dzisiaj?
+
+
+### Status
+
+![](img/arr_ptt_inc_status.png)
+
+<!-- TODO -->
 #### Miara gotowości specyfikacji (Stage 0 -> w języku)
 
-#### Feedy (Twitter, Github -> RSS)
+### Jak czerpać ze źródełka?
+
+<img src="img/rss-logo.png" alt="RSS" style="border: none; box-shadow: none; background-color: transparent;">
+
+```
+    [Link do repo]/commits/master.atom
+```
+<a href="https://github.com/tc39/Array.prototype.includes/commits/master.atom" target="_blank"></a>
+
+Note:
+(Rich Site Summary). Automatyczne, konfigurowywalny news-feed => konfigurowywalna ściana na Facebooku, tylko hackerska :D
+
+- Kto zna RSS?
+- Kto używa RSS?
+- Najlepiej śledzić Githuba, najlepszy S/N ratio. Można śledzić manifest, albo konkretne proposale.
+- Możecie tym nakarmić wasz ulubiony czytnik.
+- Niby jest też Twitter, ale wygląda na wymarły, link w materiałach
+
+<!-- Tu skończyłem, pozmieniać tytuły -->
+
+
 
 ## Co nowego?
 
@@ -233,7 +305,14 @@ Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są firmy, m
 ### Używanie niestandardowych wtyczek (es7/es8 -> coś fajnego)
 ### Pisanie własnego transpilatora (coś basic, ze stage'a 2, np. numeric literals, w Pythonie czy cuś)
 
+## Pomaganie w tworzeniu specków
+
+https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
+- Na liście dużo się dzieje, ale głównie noise + nie jest oficjalna. 
+<!-- Wypowiadają się championi, dobry case -->
+
 ## Bądź do przodu zanim inni będą! (Jak złozyć swój własny proposal kontrybucji do JSa)
+<!-- Jak wygląda cały proces -->
 <!-- TU skończyłem -->
 
 

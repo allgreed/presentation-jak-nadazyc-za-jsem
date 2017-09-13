@@ -41,7 +41,15 @@
 - [ES na wiki](https://en.wikipedia.org/wiki/ECMAScript)
 - [Wszystkie ficzery ES6](http://es6-features.org/)
 
+
 ## TC39:
 - [Github repo](https://github.com/tc39)
-- [Memebers](https://github.com/orgs/tc39/people)
+- [Członkowie](https://github.com/orgs/tc39/people)
 - [Wzminaka na ECMA International](http://www.ecma-international.org/memento/TC39.htm)
+- [Proposale](https://github.com/tc39/proposals)
+
+
+## True feedy:
+- [Github repo to RSS](https://stackoverflow.com/questions/7353538/setting-up-an-github-commit-rss-feed)
+- [Lista mailingowa](https://esdiscuss.org/)
+- [Twitter](https://twitter.com/TC39)
