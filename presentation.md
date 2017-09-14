@@ -4,6 +4,7 @@
 Note:
 - Techniczna: Dodatkowy monitor na notatki dopiąć [#nabogato] :DD
 - Techniczna: Odpalić fullscreen przy pomocy F11, a nie "f"
+- Techniczna: Ogarnąć mazak i gąbkę do tablicy
 
 - Polecam zaciągnąć prezkę z Githuba [link na Meetupie] -> dużo linków w materiałach + kody demo do śledzeine na bieżąco
 - To nie jest szkoła, jak nie rozumiecie to krzyczcie [test: "Importując tensor-flow wygenerujemy exploita Emacsem przez Sendmail"]
@@ -199,7 +200,7 @@ Note:
 Tak powinien brzmieć tytuł. Tylko wtedy nikt by nie przyszedł, bo nie wiedzałby o co chodzi ;)
 
 
-## RSS, Twitter, Blogi, Meety, Nagrania z konfernecji...
+## Twitter, Blogi, Meetupy, Nagrania z konfernecji, Książki...
 ![](img/social_overload.jpg)
 
 Note:
@@ -213,7 +214,7 @@ Note:
 ![](img/tc39.png)
 
 Note:
-Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są też firmy, m.in. Facebook, GoDaddy, Bloomberg, które wysyłają swoich ludzi. Spotykają się kilka razy w roku i ogarniają ficzery.
+Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są też firmy, m.in. Facebook, GoDaddy, Bloomberg, które wysyłają swoich ludzi. Spotykają się ~6 razy w roku i ogarniają ficzery.
 
 
 ![](img/proposal_manifest.png)
@@ -263,10 +264,13 @@ Kto uważa, że to jest spoko rozwiązanie? Kto będzie używał od dzisiaj?
 
 ![](img/arr_ptt_inc_status.png)
 
+
 <!-- TODO -->
 #### Miara gotowości specyfikacji (Stage 0 -> w języku)
 
-### Jak czerpać ze źródełka?
+
+
+## Automatyzacja
 
 <img src="img/rss-logo.png" alt="RSS" style="border: none; box-shadow: none; background-color: transparent;">
 
@@ -276,17 +280,20 @@ Kto uważa, że to jest spoko rozwiązanie? Kto będzie używał od dzisiaj?
 <a href="https://github.com/tc39/Array.prototype.includes/commits/master.atom" target="_blank"></a>
 
 Note:
-(Rich Site Summary). Automatyczne, konfigurowywalny news-feed => konfigurowywalna ściana na Facebooku, tylko hackerska :D
+Wchodzenie codziennie na GH i porównywanie diffa nie brzmi legitymacyjnie. RSS to the rescue!
+
+(Rich Site Summary). Automatyczne, konfigurowywalny news-feed => taka ściana na Facebooku tylko konfigurowywalna, z całego internetu i bez bullshitu
 
 - Kto zna RSS?
-- Kto używa RSS?
-- Najlepiej śledzić Githuba, najlepszy S/N ratio. Można śledzić manifest, albo konkretne proposale.
-- Możecie tym nakarmić wasz ulubiony czytnik.
-- Niby jest też Twitter, ale wygląda na wymarły, link w materiałach
+- Kto używa RSS? Polecam ^^
+- Można śledzić manifest (czyli zmianę statusu ficzerów) lub konkretne proposale.
+- [Tab + Enter] Możecie tym nakarmić wasz ulubiony czytnik.
+- Niby jest też Twitter TC39, ale wygląda na wymarły, link w materiałach
 
 <!-- Tu skończyłem, pozmieniać tytuły -->
 
-
+## Legal mamobojubo
+<!-- Umieścić to jakoś mądrze -->
 
 ## Co nowego?
 
