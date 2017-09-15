@@ -47,9 +47,15 @@
 - [Członkowie](https://github.com/orgs/tc39/people)
 - [Wzminaka na ECMA International](http://www.ecma-international.org/memento/TC39.htm)
 - [Proposale](https://github.com/tc39/proposals)
+- [Proces](https://tc39.github.io/process-document/)
 
 
 ## True feedy:
 - [Github repo to RSS](https://stackoverflow.com/questions/7353538/setting-up-an-github-commit-rss-feed)
 - [Lista mailingowa](https://esdiscuss.org/)
 - [Twitter](https://twitter.com/TC39)
+
+
+## Legal:
+- [Licencja](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)
+- [Patenty](http://www.ecma-international.org/memento/codeofconduct.htm)

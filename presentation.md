@@ -50,6 +50,16 @@ Note:
 Ekosystem vs język. Nie będzie o paczkach i nie będzie o API przeglądarkowym / C++owym.
 
 
+## <span style="color: #b58900">JS = FLOSS ?</span>
+<!-- .slide: data-background-color="black" -->
+
+![](img/rms.jpg)
+
+Note:
+TL:DR: Tak
+Długa odpowiedź za chwilkę ^^
+
+
 
 <h1 style="font-size:2.11em">???????</h1>
 
@@ -193,6 +203,15 @@ Imo bardziej dialekt
 Oba terminy są używane.     
 
 
+## Recap: JS = FLOSS ?
+
+- ES -> Licencja BSD
+- Zabezpieczone patenty
+
+Note:
+To temat był ruszony na początku -> specyfikacja jest na licencji BSD + ECMA ma fajną politykę odnośnie patentów (nie mogą one blokować potencjalnych implementacji). Link w materiałach.
+
+
 
 # Jak nadążyć za ECMAScript?
 
@@ -234,7 +253,7 @@ Lajtowy ficzer (niewiele dodatkowej syntaksy), używamy w Aidlabie na produkcji.
 - Problem
 - Rozwiązanie
 - Status
-- (opcjonalnie: dodatkowe info)
+- Dodatkowe info
 
 Note:
 - Czemu w ogóle ten prospoal powstał?
@@ -265,9 +284,18 @@ Kto uważa, że to jest spoko rozwiązanie? Kto będzie używał od dzisiaj?
 ![](img/arr_ptt_inc_status.png)
 
 
-<!-- TODO -->
-#### Miara gotowości specyfikacji (Stage 0 -> w języku)
+## Stage ???
 
+| # |   Stage   |    Jak używać    |
+|:-:|:---------:|:----------------:|
+| 0 |  Strawman |         -        |
+| 1 |  Proposal |       Nope       |
+| 2 |   Draft   | Eksperymentalnie |
+| 3 | Candidate |      Uważnie     |
+| 4 |  Finished |   Na produkcji   |
+
+Note:
+Ogólnie od Stage'a 3ciego te ficzery są praktycznie gotowe, natomiast polecam śledzić 3ci jeśli zależy nam na high avaiblity.
 
 
 ## Automatyzacja
@@ -290,11 +318,9 @@ Wchodzenie codziennie na GH i porównywanie diffa nie brzmi legitymacyjnie. RSS 
 - [Tab + Enter] Możecie tym nakarmić wasz ulubiony czytnik.
 - Niby jest też Twitter TC39, ale wygląda na wymarły, link w materiałach
 
+
+
 <!-- Tu skończyłem, pozmieniać tytuły -->
-
-## Legal mamobojubo
-<!-- Umieścić to jakoś mądrze -->
-
 ## Co nowego?
 
 ### Syntactic sugars (Array.prototype.include, exponential operator -> przykłady)
