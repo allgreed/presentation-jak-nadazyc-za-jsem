@@ -59,3 +59,8 @@
 ## Legal:
 - [Licencja](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)
 - [Patenty](http://www.ecma-international.org/memento/codeofconduct.htm)
+
+
+## Ficzery:
+- [ES2016](http://2ality.com/2016/01/ecmascript-2016.html)
+- [ES2017](http://2ality.com/2016/02/ecmascript-2017.html)

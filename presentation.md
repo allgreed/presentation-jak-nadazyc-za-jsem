@@ -320,14 +320,47 @@ Wchodzenie codziennie na GH i porównywanie diffa nie brzmi legitymacyjnie. RSS 
 
 
 
+# ES2016
+
+- Array.prototype.include
+- Exponential operator \*\*
+
+Note:
+Szyyyyybki przegląd nowości od ES6
+
+
+## Demo time!
+
+Note:
+Node + pokazać, że działa w przeglądarce
+- const array = [1,1,2,3,5,8];
+- array.includes(5);
+- array.includes(6);
+Można też ustalić początek wyszukiwania
+- array.includes(2,1);
+- array.includes(2,3);
+I z minusem:
+- array.includes(2,-2);
+- array.includes(2,-5);
+
+2 do potęgi 10; 5 do potęgi 3;
+
+
+# ES2017 - Async / Await
+
+Note:
+To jest nowy fajny dzieciak na osiedlu. Piszesz synchronicznie asynchroniczny kod :D
+Jest też zalążek multi threadingu w JSie, ale to jest za skomplikowane na dzisiaj i nie jest unikalne dla JSa.
+
+
+## ???
+
+Note:
+dfdjdlkfjdslkfjdslkfj
+
+
+
 <!-- Tu skończyłem, pozmieniać tytuły -->
-## Co nowego?
-
-### Syntactic sugars (Array.prototype.include, exponential operator -> przykłady)
-
-### Async / Await
-
-#### ???
 #### Callback vs Promise vs. Generator
 #### Przykład (concurent i waterfall)
 
