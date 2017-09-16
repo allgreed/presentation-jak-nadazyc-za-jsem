@@ -349,20 +349,35 @@ I z minusem:
 # ES2017 - Async / Await
 
 Note:
-To jest nowy fajny dzieciak na osiedlu. Piszesz synchronicznie asynchroniczny kod :D
+To jest nowy fajny dzieciak na osiedlu.     
+Piszesz synchronicznie asynchroniczny kod :D    
 Jest też zalążek multi threadingu w JSie, ale to jest za skomplikowane na dzisiaj i nie jest unikalne dla JSa.
 
 
 ## ???
 
 Note:
-dfdjdlkfjdslkfjdslkfj
+Ale przecież mamy callabcki, Promise'y i generatory...
+Kto kuma asynchroniczność i pętlę eventów?
+Zróbmy prosty kejs: Pobieramy nazwę usera, jego drugi posta i tłumaczymy zawartość na angielski (wszystko musi się odbyć po kolei)
 
+
+## Callback - demo time!
+
+Note:
+[code/async_await/callback -> odpalić równolegle terminal z node'em i resizować okno]
+- Callback hell -> w sumie nie zrobiliśmy nic skomplikowanego, a już jest troszku dramat
+- Error handling (tutaj to obszedłem wrapperem, natomiast jest to dramat)
+- jsonPlaceholder -> fajna stronka do takich rzeczy
+- Czy wszyscy znają: template literals, funkcje strzałkowe?
+- Tick i tock, żeby pokazać asynchroniczność
 
 
 <!-- Tu skończyłem, pozmieniać tytuły -->
-#### Callback vs Promise vs. Generator
+#### Promise vs. Generator
 #### Przykład (concurent i waterfall)
+
+<!-- To można wszystko przeczytać w poroposalu -->
 
 ## Jak używac nowych rzeczy? (z kompatybilnością wsteczną)
 

@@ -1,0 +1,11 @@
+{
+  "name": "async_await",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "google-translate-api": "^2.3.0",
+    "request": "^2.81.0"
+  }
+}

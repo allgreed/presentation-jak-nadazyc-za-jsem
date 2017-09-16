@@ -4,6 +4,8 @@
 ## Przydatne/ciekawe:
 
 - [Słownik żargonu JSowego](http://jargon.js.org/)
+- [Wszystkie ficzery ES6](http://es6-features.org/)
+- [Github repo to RSS](https://stackoverflow.com/questions/7353538/setting-up-an-github-commit-rss-feed)
 
 
 ## Grant patentowy facebooka:
@@ -39,7 +41,6 @@
 - [Standard C# wiki](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 - [Wiedza plemienna ze Stacka](https://stackoverflow.com/questions/912479/what-is-the-difference-between-javascript-and-ecmascript/30113184#30113184)
 - [ES na wiki](https://en.wikipedia.org/wiki/ECMAScript)
-- [Wszystkie ficzery ES6](http://es6-features.org/)
 
 
 ## TC39:
@@ -48,10 +49,10 @@
 - [Wzminaka na ECMA International](http://www.ecma-international.org/memento/TC39.htm)
 - [Proposale](https://github.com/tc39/proposals)
 - [Proces](https://tc39.github.io/process-document/)
+- [FAQ](https://github.com/tc39/ecma262/blob/master/FAQ.md)
 
 
 ## True feedy:
-- [Github repo to RSS](https://stackoverflow.com/questions/7353538/setting-up-an-github-commit-rss-feed)
 - [Lista mailingowa](https://esdiscuss.org/)
 - [Twitter](https://twitter.com/TC39)
 
@@ -64,3 +65,8 @@
 ## Ficzery:
 - [ES2016](http://2ality.com/2016/01/ecmascript-2016.html)
 - [ES2017](http://2ality.com/2016/02/ecmascript-2017.html)
+
+
+## Użyte biblioteki:
+
+- [Axios](https://github.com/mzabriskie/axios)
