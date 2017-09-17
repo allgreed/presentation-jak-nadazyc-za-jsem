@@ -69,4 +69,19 @@
 
 ## Użyte biblioteki:
 
-- [Axios](https://github.com/mzabriskie/axios)
+- [axios](https://github.com/mzabriskie/axios)
+- [request](https://github.com/request/request)
+- [Google Translate API client](https://www.npmjs.com/package/google-translate-api)
+
+
+## JS Promises:
+- [Wiedza plemienna ze Stacka](https://stackoverflow.com/questions/22539815/arent-promises-just-callbacks/22562045#22562045)
+- [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
+- [Funkcje strzałkowe + Promise'y](https://stackoverflow.com/a/39458285)
+- [Naiwna implementacja Promise'ów](https://stackoverflow.com/questions/15668075/concept-distilling-how-a-promise-works/15668353#15668353)
+- [Konwersja callbacków do Promise'ów](https://stackoverflow.com/questions/22519784/how-do-i-convert-an-existing-callback-api-to-promises)
+
+
+## Async generators:
+
+- [David Walsh wyjaśnia](https://davidwalsh.name/async-generators)

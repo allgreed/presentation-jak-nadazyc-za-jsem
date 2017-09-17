@@ -8,7 +8,7 @@ Note:
 
 - Polecam zaciągnąć prezkę z Githuba [link na Meetupie] -> dużo linków w materiałach + kody demo do śledzeine na bieżąco
 - To nie jest szkoła, jak nie rozumiecie to krzyczcie [test: "Importując tensor-flow wygenerujemy exploita Emacsem przez Sendmail"]
-- Jaki poziom nadążania za JSem na sali? (AA / 3lvl: let+const | async+await | dekoratory)
+- Jaki poziom nadążania za JSem na sali? (AA / 3lvl: let+const | Promise'y, generatory | async+await+dekoratory)
 
 
 
@@ -28,6 +28,9 @@ Note:
 - Kultura wymiany wiedzy
 - Community
 - FLOSS
+
+Note:
+Jak się prezka spodoba i nie jesteście członkami to wrzućcie drobniaki, bo bardzo chcemy utrzymać to miejsce -> 5taka lub dychę
 
 
 ## <span style="color: #b58900">Disclaimer: Facebook i kaluzula patentowa</span>
@@ -227,6 +230,8 @@ Note:
 - Nie pokrywają wszystkiego (nie o wszystkich rzeczach ktoś chce pisać)
 - Zopiniowane i okrojone (jakby nie były okrojone to można byłoby zreposotwać proposal)
 
+- Ogólnie to wszystko jest fajne, tylko służy innym celom, niż śledzenie standardu
+
 
 ## TC39
 
@@ -351,37 +356,116 @@ I z minusem:
 Note:
 To jest nowy fajny dzieciak na osiedlu.     
 Piszesz synchronicznie asynchroniczny kod :D    
-Jest też zalążek multi threadingu w JSie, ale to jest za skomplikowane na dzisiaj i nie jest unikalne dla JSa.
+Jest też zalążek multi threadingu w JSie, ale nie o tym ten meetup i nie jest to unikalne dla JSa.      
+Yup, używam na produkcji :D
 
 
-## ???
+## Ale osohozi???
+
+### Prosty case (po kolei):
+- Pobieramy nazwę usera
+- Pobieramy drugi post tego usera
+- Tłumaczymy na angielski (zewnętrzny serwis)
 
 Note:
-Ale przecież mamy callabcki, Promise'y i generatory...
-Kto kuma asynchroniczność i pętlę eventów?
-Zróbmy prosty kejs: Pobieramy nazwę usera, jego drugi posta i tłumaczymy zawartość na angielski (wszystko musi się odbyć po kolei)
+- Kto wie, że jest asynchroniczność?
+- Kto kuma asynchroniczonść? (Bartek tłumaczył na warsztatach z Node'a, możecie zagadać do niego)
+
+Po co to wgl? Przecież mamy callabcki, Promise'y i generatory...
+
+Na prostym case'ie -> np. mamy bloga wielojęzycznego.
+
+- Używamy boilerplate.js [objaśnić, pokazać szybko]
+- W repo folder `code`
 
 
 ## Callback - demo time!
 
+![](img/callback-meme.jpg)
+
 Note:
-[code/async_await/callback -> odpalić równolegle terminal z node'em i resizować okno]
+[cd code/async_await]   
+[cp callback.js playground.js]  
+[sub playground.js, ukryć drzewko plików]   
+[odpalić równolegle terminal z node'em i resizować okno]    
+
 - Callback hell -> w sumie nie zrobiliśmy nic skomplikowanego, a już jest troszku dramat
-- Error handling (tutaj to obszedłem wrapperem, natomiast jest to dramat)
+- Error handling (tutaj nie ma, chciałem, żeby funkcja mi się zmieściła na ekranie xd, natomiast jest to dramat)
 - jsonPlaceholder -> fajna stronka do takich rzeczy
-- Czy wszyscy znają: template literals, funkcje strzałkowe?
+- Czy wszyscy znają: template literals, funkcje strzałkowe, dekonstrukcja?
 - Tick i tock, żeby pokazać asynchroniczność
 
 
+## Promise - demo time!!!
+
+Note:
+- Kto zna pojęcie Promise'a?
+- Kto używa?
+- Kto wie jak działają?
+TL:DR Abstrakcja nad callbackami, oddziela asynchroniczną akcję od callbacku -> długa odpowiedź w materiałach     
+
+`const { **promise**Request } = require('./boilerplate');`
+
+- [split to functions -> printName, printPost, printTranslation]
+- W przypadku callbacków taki zabieg nie jest zalecany, bo te funkcje są nietestowalne [coupling] i gubimy logikę kodu
+
+```
+function ...(params)
+{
+    return promiseRequest(url[after first /]).then(data =>
+    {
+       // do the handling
+    })
+}
+```
+
+- [Wklejam calle do funkcji do głównej funkcji, przerzucam error handler na dół]
+- [Explicit return userID w printName()]
+- [Wrzucam argumenty (userID, 3, "ad aspera per astra") i odpalam, pyka w różnej kolejności]
+- [Chainuję z then i odpalam error handlera]
+- [Dorzucam funkcje strzałkowe -> można sterować argumentami, wywalam redundantny return]
+
+
+## GENERATORRRRRR - demo!
+
+Note:
+
+- Imo to jest troszku hack
+- Czy jest na sali ktoś poza mną kto to ogarnia? Szanuję ;)
+- [cp generator.js playground.js]
+
+Wyjaśnienie TL:DR:
+
+- Mamy funkcję pomocniczą, która iteruje po generatorze
+- Następnie w ciele głównej funkcji tworzymy generator
+- Przekazujemy do niego argumenty przez funkcję wyższego rzędu
+- I to działa :D
+
+...to jest ogólnie tough shit -> "metaprogramowanie" przez rekursję asynchroniczną...
+- Nie będę się wgłębiał, bo nie o tym jest ta prezka (ale jakbyście chcieli to mogę zrobić meetupa o tym -> piszcie na Slacku)
+- Ogólnie już jest naprawdę dobrze :D
+...ale dalej mamy boilerplate + nie jest to trywialne...
+
+
+## Async-await :D
+
+Note:
+- [Wywalam boilerplate generatorowy]
+- [Wywalam try-catche]
+- [Zamieniam yield na await]
+- [Dopisuję async przed funkcją]
+
+- Prawda, że prościej? 0 boilerplate'u -> ficzer języka :D
+- Node wspiera to od 8, dlatego napisałem na Meetupie, że minimalnie 8.4 ;)
+- GOOD JOB! Jesteś do ogarnięci na rok 2017 ^^
+
+
+
 <!-- Tu skończyłem, pozmieniać tytuły -->
-#### Promise vs. Generator
-#### Przykład (concurent i waterfall)
-
-<!-- To można wszystko przeczytać w poroposalu -->
-
-## Jak używac nowych rzeczy? (z kompatybilnością wsteczną)
+## Jak używac nowych rzeczy z kompatybilnością wsteczną?
 
 ### Babel (zaznaczyć licencję)
+### Source to source compiler -> Transpiler
 ### Pokaz transpilacji (basic, coś bardziej zaawansowanego i async / await)
 ### Używanie niestandardowych wtyczek (es7/es8 -> coś fajnego)
 ### Pisanie własnego transpilatora (coś basic, ze stage'a 2, np. numeric literals, w Pythonie czy cuś)
@@ -389,8 +473,10 @@ Note:
 ## Pomaganie w tworzeniu specków
 
 https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
-- Na liście dużo się dzieje, ale głównie noise + nie jest oficjalna. 
+- Na liście dużo się dzieje, ale głównie noise. 
+<!-- Kto to jest champion -->
 <!-- Wypowiadają się championi, dobry case -->
+<!-- To co było wcześniej to jest level tech lead, wszystko od teraz włącznie z tym jest powyżej i jest nadkozackie -->
 
 ## Bądź do przodu zanim inni będą! (Jak złozyć swój własny proposal kontrybucji do JSa)
 <!-- Jak wygląda cały proces -->
@@ -403,3 +489,6 @@ https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may
 
 
 # To podziękował
+
+Note:
+Przypomnieć nie-członkom, że drobne (5 / 10 PLN do puszki na HS) się przydadzą jak się podobała prezka
