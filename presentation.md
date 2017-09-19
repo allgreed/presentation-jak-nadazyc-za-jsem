@@ -634,25 +634,37 @@ Note:
 - Ciekawa syntaktycznie alternatywa do lambd
 
 
-<!-- Tutaj skończyłem -->
-### Pisanie własnego transpilatora (coś basic, ze stage'a 2, np. numeric literals, w Pythonie czy cuś)
+### Pisanie własnego transpilatora
 
+- `numeric_separator_transpiler.sh`
+- Dodajemy do build processu
 
-
+Note:
+[cat playground.js | ./numeric_separator_transpiler.sh > compiled.js; ./node_modules/.bin/babel compiled.js]
+- Tutaj ma to sens, bo Babel tej funkcjonalności nie ma
+- Można napisać swoją wtyczkę do Babela tylko... nie o tym jest ta prezka
+- Można dopisywać swoje transpilery, tylko uważajcie ;)
 
 
 
 ## Pomaganie w tworzeniu specków
 
-https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
-- Na liście dużo się dzieje, ale głównie noise. 
-<!-- Kto to jest champion -->
-<!-- Wypowiadają się championi, dobry case -->
-<!-- To co było wcześniej to jest level tech lead, wszystko od teraz włącznie z tym jest powyżej i jest nadkozackie -->
+- <a href="https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible" target="_blank">Lista dyskusyjna </a>
 
-## Bądź do przodu zanim inni będą! (Jak złozyć swój własny proposal kontrybucji do JSa)
-<!-- Jak wygląda cały proces -->
-<!-- TU skończyłem -->
+Note:
+
+- Czampioni -> osoby odpowiedzialne za przepychanie ficzera do przodu
+- Na liście dużo się dzieje, ale jest też dużo noisu
+- To jest top konkret, te osoby, które w tym threadzie się wypowiadają to championi
+- To co było wcześniej to jest level tech lead
+- Wszystko od teraz włącznie z tym jest powyżej i jest nadkozackie
+
+
+## Bądź do przodu zanim inni będą!
+
+![](img/ecma-register.png)
+
+[Formularz rejestracyjny](http://www.ecma-international.org/memento/contribute_TC39_Royalty_Free_Task_Group.php)
 
 
 
