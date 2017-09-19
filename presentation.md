@@ -221,16 +221,18 @@ To temat był ruszony na początku -> specyfikacja jest na licencji BSD + ECMA m
 Note:
 Tak powinien brzmieć tytuł. Tylko wtedy nikt by nie przyszedł, bo nie wiedzałby o co chodzi ;)
 
+Jak wy śledzicie nowości z JSa?
+
 
 ## Twitter, Blogi, Meetupy, Nagrania z konfernecji, Książki...
 ![](img/social_overload.jpg)
 
 Note:
+- Ogólnie to wszystko jest fajne, tylko służy innym celom, niż śledzenie ECMAScript
+
 - Odstęp czasowy między zmianą w proposalu, a publikacją artykułu (czas na zauważenie, przetworzenie [w tym jakieś zabawy z ficzerem], pisanie i publikację -> rozrysować na tablicy jak będzie opcja)
 - Nie pokrywają wszystkiego (nie o wszystkich rzeczach ktoś chce pisać)
 - Zopiniowane i okrojone (jakby nie były okrojone to można byłoby zreposotwać proposal)
-
-- Ogólnie to wszystko jest fajne, tylko służy innym celom, niż śledzenie standardu
 
 
 ## TC39
@@ -239,6 +241,10 @@ Note:
 
 Note:
 Osoby bezpośrednio odpowiedzialne za standaryzację ES. Członkami są też firmy, m.in. Facebook, GoDaddy, Bloomberg, które wysyłają swoich ludzi. Spotykają się ~6 razy w roku i ogarniają ficzery.
+
+Wszystkie zmiany w ES mają postać proposali.
+
+Obczajmy sobie ich stronkę na Githubie :D
 
 
 ![](img/proposal_manifest.png)
@@ -325,6 +331,9 @@ Wchodzenie codziennie na GH i porównywanie diffa nie brzmi legitymacyjnie. RSS 
 
 
 
+# Co nowego w ES?
+
+
 # ES2016
 
 - Array.prototype.include
@@ -338,7 +347,7 @@ Szyyyyybki przegląd nowości od ES6
 
 Note:
 Node + pokazać, że działa w przeglądarce
-- const array = [1,1,2,3,5,8];
+- const array = [1,1,2,3,5,8,13];
 - array.includes(5);
 - array.includes(6);
 Można też ustalić początek wyszukiwania
@@ -348,7 +357,9 @@ I z minusem:
 - array.includes(2,-2);
 - array.includes(2,-5);
 
-2 do potęgi 10; 5 do potęgi 3;
+- Jak chcemy podnieść 5 do potęgi 3 -> wcześniej było Math.pow(5,3)
+5 ** 3
+2 ** 10
 
 
 # ES2017 - Async / Await
@@ -457,18 +468,179 @@ Note:
 
 - Prawda, że prościej? 0 boilerplate'u -> ficzer języka :D
 - Node wspiera to od 8, dlatego napisałem na Meetupie, że minimalnie 8.4 ;)
+- Ogólnie to co wam pokazałem jest też w proposalu ;)
 - GOOD JOB! Jesteś do ogarnięci na rok 2017 ^^
 
 
 
-<!-- Tu skończyłem, pozmieniać tytuły -->
-## Jak używac nowych rzeczy z kompatybilnością wsteczną?
+# Kompatybilność wsteczna?
 
-### Babel (zaznaczyć licencję)
-### Source to source compiler -> Transpiler
-### Pokaz transpilacji (basic, coś bardziej zaawansowanego i async / await)
-### Używanie niestandardowych wtyczek (es7/es8 -> coś fajnego)
+Note:
+W Nodzie to nie problem     
+Ale na froncie -> jak nie jesteśmy młodym, dynamicznym startupem     
+Szefu mówi, że ma działać z IE8!!!!!!
+
+Pomysły?
+- nie używać nowych ficzerów!!!
+- (Czy musimy pisać to samo czym karmimy interpreter?) -> KOMPILACJA!
+
+
+## Source to source compiler
+
+<img src="img/es6toes5.png" alt="es6 to es5 transpilation" style="background: none; border: none; box-shadow: none;">
+
+Note:
+Niektórzy mówią na to transpiler (taki kompilator, który nie zmienia poziomu abstrakcji)
+
+
+### Basic
+
+`let | const => var`
+
+Note:
+Zaczynamy z ES2015+, chcemy zobaczyć jak to działa na produkcji, ale interesuje nas kompatybilność wsteczna
+
+
+## Podejście I - RegExp + Perl
+
+```bash
+    cat playground.js # read playground.js
+    perl -pe 's/\/\/.*\n//g' # remove comments
+    perl -pe 's/let|const/var/g' # replace let or const with var
+    > compiled.js # output to compiled.js
+```
+
+Note:
+- [cp let_const.js playground.js]
+- [równolegle sublime -> source, sublime -> compiled, i terminal]
+- [Wrzucam basha do Sublime'a, usuwam komenty, zrzucam do jednej linijki, dodaję pipe'y]
+- [Transpiluję]
+- [Odkomentowywuję caveat, transpiluję -> wychodzi bullshit] - rzecz, na którą trzeba uważać
+- [Wrzucam `\b` przed let i const, transpiluję -> działa]
+- [Odkomentowywuję caveat 2]
+- [Transpiluję, działa]
+
+
+## Podejście II
+
+- X linijek wymyślania koła na nowo
+
+vs.
+
+```$ yarn add [koło] ```
+
+
+## "Koło"
+
+<img src="img/babel-logo.png" alt="babel" style="background: none; border: none; box-shadow: none;">
+
+Note:
+Transpilator ES -> na otwartej licencji MIT
+Robi dokładnie to, na czym nam zależy -> przekłada ES2015+ na ES5
+
+
+### Lecimy!
+
+<a href="https://babeljs.io/repl/" target="_blank">Online REPL </a>
+
+Note:
+- [cat playground.js | clip]
+- [Wklejam w browserze]
+
+- O tym nie pomyśleliśmy -> wyjaśnić `void 0`:
+    -  let musi zapewniać block scope
+    - ten problem występuje tylko w ES5
+    - w wyższych wersjach undefined jest zmienianie na read-only przy starcie
+
+
+### MOAR!
+
+- Destructing
+
+```js
+    const { prop1, prop2 } = object;
+```
+
+- Template literals
+
+```js
+    console.log(`Prop1 is ${prop1} and prop2 is ${prop2}`);
+```
+
+- Spread operator
+
+```js
+    const object = {prop2: 1, prop1: 2};
+    const another_object = {prop3: 3};
+
+    const merged_object = {...object, ...another_object}
+```
+
+Note:
+Używanie generatorów, async/await na froncie wymaga zinclude'owania runtimeów do tych rzeczy, one trochę ważą [więcej, niż kilka lnijek w każdym razie, polecam na to zwracać uwagę]
+
+
+### Babel na naszej maszynie
+
+- Setup
+
+```bash
+    yarn init -y
+    yarn add babel-cli --dev
+    yarn add babel-preset-env babel-preset-stage-3 --dev
+```
+
+- Config
+
+```json
+    {
+        "presets": ["env","stage-3"]
+    }
+```
+
+- Run
+
+```bash
+    ./node_modules/.bin/babel playground.js
+```
+
+
+
+# ES Next
+
+Note:
+Wiemy już jak używać tego co jest w standardzie to teraz użyjmy czegoś, czego jeszcze nie ma :D
+
+
+## Niestandardowe wtyczki Babel'a
+### Na przykładzie: Do expressions
+
+```bash
+    yarn add --dev babel-plugin-transform-do-expressions
+```
+
+```json
+    "plugins": ["transform-do-expressions"]
+```
+
+Note:
+- [cp do_expression.js playground.js]
+- [./node_modules/.bin/babel playground.js | node]
+- Zmienić "Number" na "keton"
+- [./node_modules/.bin/babel playground.js | node]
+- Zobaczmy co się dzieje pod spodem :D
+- [./node_modules/.bin/babel playground.js ]
+
+- Ciekawa syntaktycznie alternatywa do lambd
+
+
+<!-- Tutaj skończyłem -->
 ### Pisanie własnego transpilatora (coś basic, ze stage'a 2, np. numeric literals, w Pythonie czy cuś)
+
+
+
+
+
 
 ## Pomaganie w tworzeniu specków
 

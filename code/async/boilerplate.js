@@ -1,8 +1,3 @@
-String.prototype.capitalize = function() 
-{
-    return this.charAt(0).toUpperCase() + this.slice(1);
-}
-
 const axios = require('axios');
 
 const HTTP = axios.create({ baseURL: "https://jsonplaceholder.typicode.com" });
@@ -18,6 +13,11 @@ exports.promiseRequest = function promiseRequest(url)
 }
 
 exports.translate = require('google-translate-api');
+
+String.prototype.capitalize = function() 
+{
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
 
 exports.print =
 {

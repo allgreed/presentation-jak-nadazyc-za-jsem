@@ -85,3 +85,19 @@
 ## Async generators:
 
 - [David Walsh wyjaśnia](https://davidwalsh.name/async-generators)
+- [Runtime for generators](https://github.com/airbnb/javascript#generators--nope)
+
+
+## Babel:
+
+- [Transpilator na wiki](https://en.wikipedia.org/wiki/Source-to-source_compiler)
+- [Strona projektu](https://babeljs.io/)
+- [Repo](https://github.com/babel/babel)
+- [Void 0](https://stackoverflow.com/questions/7452341/what-does-void-0-mean)
+- [REPL wiki](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
+- [Installation guide](http://babeljs.io/docs/usage/cli/#installation)
+
+
+## Do-expression:
+- [Plugin](https://babeljs.io/docs/plugins/transform-do-expressions/)
+- [Proposal](https://github.com/tc39/proposal-do-expressions)

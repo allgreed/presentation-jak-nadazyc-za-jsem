@@ -10,3 +10,6 @@ http://imakethat.com/imt/wp-content/uploads/6-steps-to-treat-social-media-overlo
 https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/1200px-Feed-icon.svg.png
 https://upload.wikimedia.org/wikipedia/commons/f/f3/Richard_Stallman_by_Anders_Brenna_01.jpg
 http://vmorneau.me/content/images/2016/09/3ogi8b.jpg
+https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Badge_js-strict.svg/2000px-Badge_js-strict.svg.png
+https://artmart.studio/static/upload/es6.svg
+https://raw.githubusercontent.com/babel/logo/master/babel.png
