@@ -8,8 +8,9 @@ Note:
 
 - Polecam zaciągnąć prezkę z Githuba [link na Meetupie] -> dużo linków w materiałach + kody demo do śledzeine na bieżąco
 - To nie jest szkoła, jak nie rozumiecie to krzyczcie [test: "Importując tensor-flow wygenerujemy exploita Emacsem przez Sendmail"]
+- Jaki jest poziom JSa na sali? (3 lvl: coś | pracowanie w JSie | ogarnianie tego, co się dzieje pod spodem )
 - Jaki poziom nadążania za JSem na sali? (AA / 3lvl: let+const | Promise'y, generatory | async+await+dekoratory)
-
+- Ta prezentacja zachacza o wiele tematów, nie wszystkie omówię tak dobrze, jak bym chciał... Ale mogę zrobić o tych rzeczach osobny meetup, jak będą chęci -> piszcie na Slacku.
 
 
 # <span style="color: #b58900">Disclaimer</span>
