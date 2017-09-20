@@ -637,12 +637,12 @@ Note:
 
 ### Pisanie własnego transpilatora
 
-- `numeric_separator_transpiler.sh`
+- `python transform_numeric_separator.py`
 - Dodajemy do build processu
 
 Note:
-[cat playground.js | ./numeric_separator_transpiler.sh > compiled.js; ./node_modules/.bin/babel compiled.js]
-- Tutaj ma to sens, bo Babel tej funkcjonalności nie ma
+[cat playground.js | python transform_numeric_separator.py > _compiled.js; ./node_modules/.bin/babel _compiled.js]
+- Tutaj ma to sens, bo Babel tej funkcjonalności nie ma [znowu RegExp :D]
 - Można napisać swoją wtyczkę do Babela tylko... nie o tym jest ta prezka
 - Można dopisywać swoje transpilery, tylko uważajcie ;)
 
