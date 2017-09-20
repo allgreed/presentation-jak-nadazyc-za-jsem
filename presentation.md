@@ -657,7 +657,7 @@ Note:
 - Czampioni -> osoby odpowiedzialne za przepychanie ficzera do przodu
 - Na liście dużo się dzieje, ale jest też dużo noisu
 - To jest top konkret, te osoby, które w tym threadzie się wypowiadają to championi
-- To co było wcześniej to jest level tech lead
+- To co było wcześniej to jest level ogarnięty mid
 - Wszystko od teraz włącznie z tym jest powyżej i jest nadkozackie
 
 
